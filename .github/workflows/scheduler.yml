@@ -11,14 +11,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: pnpm/action-setup@v3
-
       - name: Set node
         uses: actions/setup-node@v4
         with:
           node-version: lts/*
 
-      - run: npx pnpm i
+      - run: npm install
 
       - name: Update sponsors
         run: npm run build
