@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "build": "sponsorkit"
+    "build": "sponsorkit",
+    "release": "sponsorkit && git add . && git commit -m 'chore: update sponsors' && git push"
   },
   "devDependencies": {
     "sponsorkit": "latest"
