@@ -1,8 +1,7 @@
 {
   "type": "module",
   "scripts": {
-    "build": "sponsorkit",
-    "release": "sponsorkit && git add . && git commit -m 'chore: update sponsors' && git push"
+    "release": "pnpm zx ./scripts/release.ts"
   },
   "devDependencies": {
     "sponsorkit": "latest",
