@@ -1,9 +1,12 @@
 {
+  "type": "module",
   "scripts": {
     "build": "sponsorkit",
     "release": "sponsorkit && git add . && git commit -m 'chore: update sponsors' && git push"
   },
   "devDependencies": {
-    "sponsorkit": "latest"
+    "sponsorkit": "latest",
+    "wrangler": "^3.53.1",
+    "zx": "^8.0.2"
   }
 }
