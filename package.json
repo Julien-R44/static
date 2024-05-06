@@ -1,7 +1,7 @@
 {
   "type": "module",
   "scripts": {
-    "release": "pnpm zx ./scripts/release.ts"
+    "release": "pnpm zx ./scripts/release.js"
   },
   "devDependencies": {
     "sponsorkit": "latest",
