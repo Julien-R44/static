@@ -1,5 +1,8 @@
 const shouldUpdateRepo = !process.argv.includes("--no-update-repo");
 
+console.log("Removing old files...");
+await $`rm -rf sponsorkit`;
+
 console.log("Building sponsors.svg...");
 await $`pnpm sponsorkit`;
 
